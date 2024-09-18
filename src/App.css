@@ -1,0 +1,441 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  box-sizing: border-box;
+  background: radial-gradient(#1965b3, #0f2743);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0%;
+}
+
+.menu {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.385);
+  border-radius: 20px;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.colorContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 590px;
+  border-radius: 100%;
+  background: linear-gradient(#282c34, #393d42, #282c34);
+  padding: 20px;
+  border: 10px solid #241f21;
+  box-shadow: 5px 15px 10px 1px black;
+}
+
+.colorCard {
+  height: 275px;
+  width: 275px;
+  margin: 8px;
+  box-shadow: 2px 8px 10px 1px black;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 50px;
+  color: #0f2743;
+}
+
+.menuButton {
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+  top: 20px;
+  right: 20px;
+  background: radial-gradient(#282c34, black);
+  color: white;
+  border: 2px solid #241f21;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menuButton:hover {
+  width: 301px;
+  height: 101px;
+  font-size: 30px;
+}
+
+.startButton {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  border-radius: 100%;
+  font-size: 21px;
+  color: white;
+  background: radial-gradient(#282c34, black);
+  box-shadow: 2px 8px 10px 1px black;
+  border: 8px solid #241f21;
+  cursor: pointer;
+}
+
+.startButton:hover {
+  width: 177px;
+  height: 177px;
+  font-size: 21px;
+}
+
+.score {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background: radial-gradient(#282c34, black);
+  border: 8px solid #241f21;
+  font-size: 100px;
+  color: white;
+  box-shadow: 2px 8px 10px 1px black;
+  margin: 20px 0;
+}
+
+.flash.flash {
+  box-sizing: border-box;
+  border: 3px solid white;
+}
+
+.red {
+  background-color: red;
+  border-top-right-radius: 100%;
+  cursor: pointer;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.red.flash {
+  background-color: rgb(255, 132, 132);
+}
+
+.blue {
+  background-color: blue;
+  border-bottom-left-radius: 100%;
+  cursor: pointer;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.blue.flash {
+  background-color: rgb(123, 125, 255);
+}
+
+.green {
+  background-color: green;
+  border-top-left-radius: 100%;
+  cursor: pointer;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.green.flash {
+  background-color: rgb(143, 252, 134);
+}
+
+.yellow {
+  background-color: yellow;
+  border-bottom-right-radius: 100%;
+  cursor: pointer;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.yellow.flash {
+  background-color: rgb(224, 229, 126);
+}
+
+.gameOver {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  position: absolute;
+  padding: 20px;
+}
+
+.lostButton {
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+  top: 20px;
+  right: 20px;
+  background: radial-gradient(#282c34, black);
+  color: white;
+  border: 2px solid #241f21;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.finalScore {
+  font-size: 50px;
+  color: #0f2743;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    width: 600px;
+    height: 400px;
+  }
+
+  .gameOver {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu {
+    width: 500px;
+    height: 300px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .menuButton {
+    width: 250px;
+    height: 75px;
+    font-size: 20px;
+  }
+
+  .menuButton:hover {
+    width: 251px;
+    height: 76px;
+    font-size: 20px;
+  }
+
+  .gameOver {
+    width: 500px;
+    height: 300px;
+  }
+
+  .lostButton {
+    width: 250px;
+    height: 75px;
+    font-size: 20px;
+  }
+
+  .finalScore {
+    font-size: 40px;
+  }
+
+  .colorContainer {
+    max-width: 535px;
+  }
+
+  .colorCard {
+    height: 250px;
+    width: 250px;
+  }
+
+  .startButton {
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+  }
+
+  .startButton:hover {
+    width: 152px;
+    height: 152px;
+    font-size: 18px;
+  }
+
+  .score {
+    width: 125px;
+    height: 125px;
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 650px) {
+  .colorContainer {
+    max-width: 435px;
+  }
+
+  .colorCard {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    width: 400px;
+    height: 250px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .gameOver {
+    width: 400px;
+    height: 250px;
+  }
+
+  .finalScore {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 550px) {
+  .colorContainer {
+    max-width: 385px;
+  }
+
+  .colorCard {
+    height: 175px;
+    width: 175px;
+  }
+
+  .startButton {
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+  }
+
+  .startButton:hover {
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+  }
+
+  .score {
+    width: 75px;
+    height: 75px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    width: 300px;
+    height: 250px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .menuButton {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .menuButton:hover {
+    width: 201px;
+    height: 51px;
+    font-size: 15px;
+  }
+
+  .gameOver {
+    width: 300px;
+    height: 250px;
+  }
+
+  .lostButton {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .finalScore {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .colorContainer {
+    max-width: 285px;
+  }
+
+  .colorCard {
+    height: 125px;
+    width: 125px;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu {
+    width: 200px;
+    height: 200px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .menuButton {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .menuButton:hover {
+    width: 151px;
+    height: 51px;
+    font-size: 15px;
+  }
+
+  .gameOver {
+    width: 200px;
+    height: 200px;
+  }
+
+  .finalScore {
+    font-size: 30px;
+  }
+
+  .colorContainer {
+    max-width: 235px;
+  }
+
+  .colorCard {
+    height: 100px;
+    width: 100px;
+  }
+
+  .startButton {
+    width: 85px;
+    height: 85px;
+    font-size: 8px;
+  }
+
+  .startButton:hover {
+    width: 86px;
+    height: 86px;
+    font-size: 8px;
+  }
+
+  .score {
+    width: 65px;
+    height: 65px;
+    font-size: 40px;
+  }
+}
